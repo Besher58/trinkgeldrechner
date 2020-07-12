@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+section{
+    width: 60%;
+    margin: 15vh auto;
+    background: pink;
+    border-radius: 10px;
+    height: 70vh;
+}
+h2{
+    text-align: center;
+    padding-top: 10vh;
+}
+.resu{
+    width: 45%;
+}
+#resu1{
+    width: 45%;
+    position: relative;
+}
+.bu{
+    width: 20%;
+    display: block;
+}
+article{
+    display: flex;
+    justify-content: space-evenly;
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+    position: absolute;
+    display: none;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .container {
+    padding: 2px 16px;
+  }
+.block{
+    display: block;
+}

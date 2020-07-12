@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <h2>Trinkgeldrechner</h2>
+        <article>
+            <div class="resu">
+                <form action="" onsubmit="return false">
+                    <label for="">Wie hoch war die Rechnung</label><br>
+                    <label class="mon" for="">&#128178;</label><input type="number" name="" id="geld" required
+                        placeholder="Geld"><label id="hier" for=""></label><br>
+                    <label for="">Wie viele Menschen</label><br>
+                    <label for="">&#128100;</label><input type="number" name="" id="per" required
+                        placeholder="Personen"><label id="hier1" for=""></label><br>
+                    <select>
+                        <option id="wie">wie war der Service</option>
+                        <option id="sch">Schlecht</option>
+                        <option id="ok">Okay</option>
+                        <option id="sup" value="">Super</option>
+                    </select>
+                    <label id="war" for=""></label><input type="text" name="" id="mont"
+                        placeholder="z.B. jan ,feb..(etc..)" required>
+                    <br>
+                    <input class="bu" type="submit" value="Rechnen" onclick="rech()">
+                    <input type="reset" value="reset" onclick="res()">
+                </form>
+                <h5 id="trink"></h5>
+                <h5 id="gesammt"></h5>
+                <h5 id="preis"></h5>
+            </div>
+            <div id="resu1">
+                <div id="jan" class="card">
+                    <img src="https://www.horoscopedates.com/img/icon_aquarius.png">
+                    <div class="container">
+                        <h4><b>AQUARIUS</b></h4>
+                        <p>Have you been feeling a bit bored with your life lately? Well, good news! Today offers you a
+                            great…</p>
+                    </div>
+                </div>
+                <div id="feb" class="card">
+                    <img src="https://www.horoscopedates.com/img/icon_pisces.png">
+                    <div class="container">
+                        <h4><b>PISCES</b></h4>
+                        <p>Communication is very important today—written, spoken, and even nonverbal body language will
+                            all…
+                        </p>
+                    </div>
+                </div>
+                <div id="mar" class="card">
+                    <img src="https://www.horoscopedates.com/img/icon_aries.png">
+                    <div class="container">
+                        <h4><b>Aries</b></h4>
+                        <p>Today your patience might be tested when one or more of your projects gets put on hold by
+                            someone…
+                        </p>
+                    </div>
+                </div>
+                <div id="apr" class="card">
+                    <img src="https://www.horoscopedates.com/img/icon_taurus.png">
+                    <div class="container">
+                        <h4><b>TAURUS</b></h4>
+                        <p>Your intense energy makes you a great candidate for a leadership position right now, so if
+                            you are…
+                        </p>
+                    </div>
+                </div>
+                <div id="mai" class="card">
+                    <img src="https://www.horoscopedates.com/img/icon_gemini.png">
+                    <div class="container">
+                        <h4><b>GEMINI</b></h4>
+                        <p>If you aren't sure if you are ready to commit to a party, a date, a new job, or anything else
+                            that…
+                        </p>
+                    </div>
+                </div>
+                <div id="jun" class="card">
+                    <img src="https://www.horoscopedates.com/img/icon_cancer.png">
+                    <div class="container">
+                        <h4><b>CANCER</b></h4>
+                        <p>Too many different elements in your life are overlapping with each other right now—and it's
+                            your…
+                        </p>
+                    </div>
+                </div>
+                <div id="jul" class="card">
+                    <img src="https://www.horoscopedates.com/img/icon_leo.png">
+                    <div class="container">
+                        <h4><b>LEO</b></h4>
+                        <p>The issues you'll be dealing with today are very complicated ones—you will have to navigate
+                            your…
+                        </p>
+                    </div>
+                </div>
+                <div id="aug" class="card">
+                    <img src="https://www.horoscopedates.com/img/icon_virgo.png">
+                    <div class="container">
+                        <h4><b>Aug</b></h4>
+                        <p>You'll get along best with people who appeal to your more analytical side, today.
+                            Surprisingly, all…
+                        </p>
+                    </div>
+                </div>
+                <div id="sep" class="card">
+                    <img src="https://www.horoscopedates.com/img/icon_libra.png">
+                    <div class="container">
+                        <h4><b>Sep</b></h4>
+                        <p>Pick a cultural event that's coming up and get some tickets for it today.
+                        </p>
+                    </div>
+                </div>
+                <div id="oct" class="card">
+                    <img src="https://www.horoscopedates.com/img/icon_scorpio.png">
+                    <div class="container">
+                        <h4><b>Oct</b></h4>
+                        <p>Someone will challenge a belief that you've held for a very long time today—and they will say
+                            an…
+                        </p>
+                    </div>
+                </div>
+                <div id="nov" class="card">
+                    <img src="https://www.horoscopedates.com/img/icon_sagittarius.png">
+                    <div class="container">
+                        <h4><b>Nov</b></h4>
+                        <p>Someone in your life needs to step up and take on more responsibility—and you need to tell
+                            them to....
+                        </p>
+                    </div>
+                </div>
+                <div id="dec" class="card">
+                    <img src="https://www.horoscopedates.com/img/icon_capricorn.png">
+                    <div class="container">
+                        <h4><b>Dec</b></h4>
+                        <p>Breaking the rules is not always a bad thing—especially if the rules limit your creativity.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
